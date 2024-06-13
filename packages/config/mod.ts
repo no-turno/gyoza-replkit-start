@@ -7,7 +7,7 @@ async function writeManifestJSON(file: any, config: any) {
 
 export async function createConfigManifest(extensionConfig: ExtensionConfig, options: {
 	sync: boolean
-}) {
+}): Promise<ExtensionConfig> {
 	const manifestFile = Bun.file(`${process.cwd()}/extension.json`)
 
 	if (!(await manifestFile.exists())) {
@@ -27,6 +27,8 @@ export async function createConfigManifest(extensionConfig: ExtensionConfig, opt
 	if (updateConfig && updateConfig === "y") {
 		return await writeManifestJSON(manifestFile, extensionConfig)
 	}
+
+	return await manifestFile.json()
 }
 
 export async function defineConfig<T extends ExtensionConfig>(
@@ -36,6 +38,6 @@ export async function defineConfig<T extends ExtensionConfig>(
 	} = {
 			sync: false
 		}
-): Promise<T> {
+): Promise<ExtensionConfig> {
 	return await createConfigManifest(userConfig, options)
 }

@@ -17,5 +17,5 @@
 		"noUnusedParameters": false,
 		"noPropertyAccessFromIndexSignature": false
 	},
-	"include": ["mod.ts", "types.d.ts"]
+	"include": ["mod.ts", "types.ts"]
 }
