@@ -10,8 +10,8 @@
 		"check": "tsc --noEmit"
 	},
 	"exports": {
-		".": {
-			"default": "./mod.ts"
-		}
+		"import": "./mod.ts",
+		"default": "./mod.ts",
+		"types":"./types.ts"
 	}
 }
