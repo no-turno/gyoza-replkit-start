@@ -1,0 +1,15 @@
+{
+  "name": "@gyoza/replkit-start",
+  "workspaces": [
+    "{packages,examples}/**"
+  ],
+  "scripts": {},
+  "license": "MIT",
+  "dependencies": {
+    "just-install": "^2.0.1"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.4",
+    "typescript": "^5.4.5"
+  }
+}
