@@ -1,0 +1,14 @@
+{
+  "name": "@gyoza/replkit-start",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run ./extension.config.ts"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@gyoza/replkit-start-config": "workspace:*"
+  }
+}

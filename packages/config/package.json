@@ -1,0 +1,17 @@
+{
+	"name": "@gyoza/replkit-start-config",
+	"version": "1.0.0",
+	"description": "",
+	"type": "module",
+	"module": "./mod.ts",
+	"scripts": {
+		"build": "bun build ./mod.ts --format=esm --target=bun --outdir=dist --sourcemap=external",
+		"test": "bun test",
+		"check": "tsc --noEmit"
+	},
+	"exports": {
+		".": {
+			"default": "./mod.ts"
+		}
+	}
+}

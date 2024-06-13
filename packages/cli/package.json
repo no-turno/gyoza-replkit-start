@@ -1,0 +1,17 @@
+{
+	"name": "@gyoza/replkit-start-cli",
+	"version": "1.0.0",
+	"description": "",
+	"type": "module",
+	"module": "./cli.ts",
+	"scripts": {
+		"build": "bun build ./cli.ts --format=esm --target=bun --outdir=dist --sourcemap=external",
+		"compile": "bun build --compile ./dist/cli.js --outfile=dist/.bin/replkit-start"
+	},
+	"bin": "./dist/cli.js",
+	"exports": {
+		".": {
+			"default": "./cli.ts"
+		}
+	}
+}
