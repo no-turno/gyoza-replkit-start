@@ -1,0 +1,27 @@
+{
+	"compilerOptions": {
+		"lib": ["ESNext", "DOM", "DOM.Iterable", "WebWorker"],
+		"target": "ESNext",
+		"module": "ES2022",
+		"jsx": "react-jsx",
+		"jsxImportSource": "react",
+		"allowJs": true,
+		"moduleResolution": "bundler",
+		"noEmit": true,
+		"strict": true,
+		"allowSyntheticDefaultImports": true,
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"allowArbitraryExtensions": true,
+		"forceConsistentCasingInFileNames": true,
+		"emitBOM": true,
+		"baseUrl": "./",
+		"paths": {
+			"@/*": ["./*"]
+		},
+		"types": ["react", "react-dom", "bun"],
+		"outDir": "dist"
+	},
+	"include": ["**/*.ts", "**/*.tsx", "**/*.d.ts"]
+}

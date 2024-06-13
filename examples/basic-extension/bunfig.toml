@@ -1,0 +1,13 @@
+# react defaults
+jsx = "react-jsx"
+jsxImportSource = "react"
+
+# run app using less resources. Good option for non replit core
+smol = true
+
+# define value at runtime
+[define]
+"import.meta.env.isExtension" = "true"
+
+[run]
+shell = "system"
